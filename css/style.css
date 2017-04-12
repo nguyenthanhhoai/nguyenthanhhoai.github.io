@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url("../fonts/RobotoSlab-Bold.ttf"); }
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url("../fonts/RobotoSlab-Regular.ttf"); }
+@font-face {
+  font-family: "RobotoSlab-Light";
+  src: url("../fonts/RobotoSlab-Light.ttf"); }
+@font-face {
+  font-family: "Brandon-Bold";
+  src: url("../fonts/Brandon_bld.otf"); }
+@font-face {
+  font-family: "Brandon-Medium";
+  src: url("../fonts/Brandon_med.otf"); }
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative; }
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important; }
+
+.navigation {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #08070e;
+  border: none;
+  border-radius: 0;
+  min-height: 80px;
+  font-family: "RobotoSlab-Regular"; }
+  .navigation .navbar-brand {
+    padding: 25px 120px 25px 0; }
+  .navigation li a {
+    color: #fff;
+    font-size: 18px;
+    border-top: solid 5px transparent;
+    padding: 25px 20px; }
+    .navigation li a:hover {
+      color: #e00015;
+      border-top-color: #e00015;
+      background: none; }
+    .navigation li a:focus {
+      background: none; }
+  .navigation li.active a {
+    color: #e00015;
+    border-top-color: #e00015;
+    background: none; }
+
+.intro-block {
+  height: 100%;
+  background: url("../images/homebg.jpg") center center no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .intro-block .title-1 {
+    font-family: "Brandon-Bold";
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 170px;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+  .intro-block .title-2 {
+    font-family: "Brandon-Medium";
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-transform: uppercase; }
+  .intro-block .title-3 {
+    font-family: "RobotoSlab-Light";
+    font-size: 20px;
+    margin-bottom: 60px;
+    line-height: 30px; }
+  .intro-block .behance-btn {
+    background-color: #fd0000;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Brandon-Medium";
+    font-size: 16px; }
+    .intro-block .behance-btn span {
+      position: relative;
+      top: 3px;
+      margin-left: 5px; }
+    .intro-block .behance-btn:hover {
+      text-decoration: none; }
+  .intro-block .scroll-down-btn {
+    margin-top: 160px;
+    display: inline-block; }
+
+.about-block {
+  height: 500px;
+  text-align: center;
+  font-family: "RobotoSlab-Regular";
+  font-size: 16px; }
+  .about-block .intro-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: "Brandon-Bold";
+    margin-top: 80px;
+    margin-bottom: 35px; }
+    .about-block .intro-title img {
+      margin-bottom: 30px; }
+    .about-block .intro-title .title-red {
+      color: #fd0000; }
+  .about-block .personal-intro {
+    margin: 35px 0 45px; }
+  .about-block .ability .ability-title {
+    font-family: "Brandon-Bold";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .about-block .ability p {
+    margin-bottom: 0; }
+  .about-block .file-download-btn {
+    margin-top: 55px;
+    background-color: #fd0000;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Brandon-Medium";
+    font-size: 16px;
+    margin-bottom: 75px; }
+    .about-block .file-download-btn img {
+      margin-left: 10px;
+      position: relative;
+      bottom: 5px; }
+
+/*# sourceMappingURL=style.css.map */

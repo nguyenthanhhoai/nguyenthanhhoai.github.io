@@ -1,0 +1,188 @@
+$robotoRegular: 'RobotoSlab-Regular';
+$robotoLight: 'RobotoSlab-Light';
+$robotoBold: 'RobotoSlab-Bold';
+$brandonBold: 'Brandon-Bold';
+$brandonMedium: 'Brandon-Medium';
+
+@font-face {
+  font-family: $robotoBold;
+  src: url('../fonts/RobotoSlab-Bold.ttf');
+}
+
+@font-face {
+  font-family: $robotoRegular;
+  src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: $robotoLight;
+  src: url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+  font-family: $brandonBold;
+  src: url('../fonts/Brandon_bld.otf');
+}
+
+@font-face {
+  font-family: $brandonMedium;
+  src: url('../fonts/Brandon_med.otf');
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative; 
+}
+
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.navigation {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #08070e;
+  // background-color: #fff;
+  border: none;
+  border-radius: 0;
+  min-height: 80px;
+  font-family: $robotoRegular;
+  .navbar-brand {
+    padding: 25px 120px 25px 0;
+  }
+
+  li {
+    a {
+      color: #fff;
+      font-size: 18px;
+      border-top: solid 5px transparent;
+      padding: 25px 20px;
+      &:hover {
+        color: #e00015;
+        border-top-color: #e00015;
+        background: none;
+      }
+      &:focus {
+        background: none;
+      }
+    }
+    &.active {
+      a {
+        color: #e00015;
+        border-top-color: #e00015;
+        background: none;
+      }
+    }
+  }
+}
+
+.intro-block {
+  height: 100%;
+  background: url('../images/homebg.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  .title-1 {
+    font-family: $brandonBold;
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 170px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .title-2 {
+    font-family: $brandonMedium;
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  .title-3 {
+    font-family: $robotoLight;
+    font-size: 20px;
+    margin-bottom: 60px;
+    line-height: 30px;
+  }
+  .behance-btn {
+    background-color: #fd0000;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: $brandonMedium;
+    font-size: 16px;
+    span {
+      position: relative;
+      top: 3px;
+      margin-left: 5px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .scroll-down-btn {
+    margin-top: 160px;
+    display: inline-block;
+  }
+}
+
+.about-block {
+  height: 500px;
+  text-align: center;
+  font-family: $robotoRegular;
+  font-size: 16px;
+  .intro-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: $brandonBold;
+    margin-top: 80px;
+    margin-bottom: 35px;
+    img {
+      margin-bottom: 30px;
+    }
+    .title-red {
+      color: #fd0000;
+    }
+  }
+
+  .personal-intro {
+    margin: 35px 0 45px;
+  }
+
+  .ability {
+    .ability-title {
+      font-family: $brandonBold;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 0
+    }
+  }
+
+  .file-download-btn {
+    margin-top: 55px;
+    background-color: #fd0000;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: $brandonMedium;
+    font-size: 16px;
+    margin-bottom: 75px;
+    img {
+      margin-left: 10px;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+}
