@@ -21,4 +21,16 @@ $(document).ready(function() {
       });
     } // End if
   });
+
+  var mixer = mixitup('.portfolio .items-fr', {
+    selectors: {
+      target: '.item'
+    },
+    "animation": {
+      "duration": 618,
+      "nudge": true,
+      "reverseOut": false,
+      "effects": "fade scale(0.53)"
+    }
+  });
 });

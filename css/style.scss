@@ -286,6 +286,110 @@ p {
   }
 }
 
+.experience-block {
+  text-align: center;
+  background-color: #eaf0f3;
+  font-family: $robotoRegular;
+  font-size: 16px;
+  .intro-text {
+    margin-bottom: 0;
+  }
+
+  hr {
+    border-top-color: #ea2216;
+    margin: 50px 0;
+  }
+
+
+  .text-fr {
+    text-align: left;
+    .title {
+      margin-top: 0;
+      font-family: $brandonBold;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .date {
+      color: #fd0000;
+    }
+
+    .company-name {
+      font-weight: bold;
+    }
+
+    .experience-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-bottom: 20px;
+        img {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-block {
+  text-align: center;
+  font-family: $robotoRegular;
+  padding-bottom: 35px;
+  .button-fr {
+    margin-bottom: 65px;
+    position: relative;
+    button {
+      display: inline-block;
+      border: solid 2px #fd0000;
+      padding: 15px 25px;
+      background-color: #FFF;
+      margin: 0 15px;
+      border-radius: 25px;
+      font-size: 15px;
+      font-family: $brandonBold;
+      text-transform: uppercase;
+      &.mixitup-control-active {
+        background-color: #fd0000;
+        color: #fff;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .behance-link {
+      position: absolute;
+      right: 0;
+      top: 15px;
+    }
+  }
+  .items-fr {
+    .item {
+      margin-bottom: 25px;
+      a {
+        display: block;
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+        color: #fff;
+        .caption-fr {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: rgba(17,18,17,0.2);
+          .text {
+            margin-top: 10px;
+          }
+          .type {
+            color: #fd2626;
+          }
+        }
+      }
+    }
+  }
+}
+
 .contact-block {
   text-align: center;
   background-color: #eaf0f3;

@@ -199,6 +199,81 @@ body {
     .education-block .text-fr .university {
       font-family: "RobotoSlab-Bold"; }
 
+.experience-block {
+  text-align: center;
+  background-color: #eaf0f3;
+  font-family: "RobotoSlab-Regular";
+  font-size: 16px; }
+  .experience-block .intro-text {
+    margin-bottom: 0; }
+  .experience-block hr {
+    border-top-color: #ea2216;
+    margin: 50px 0; }
+  .experience-block .text-fr {
+    text-align: left; }
+    .experience-block .text-fr .title {
+      margin-top: 0;
+      font-family: "Brandon-Bold";
+      font-size: 20px;
+      text-transform: uppercase; }
+    .experience-block .text-fr .date {
+      color: #fd0000; }
+    .experience-block .text-fr .company-name {
+      font-weight: bold; }
+    .experience-block .text-fr .experience-list {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .experience-block .text-fr .experience-list li {
+        margin-bottom: 20px; }
+        .experience-block .text-fr .experience-list li img {
+          margin-right: 15px; }
+
+.portfolio-block {
+  text-align: center;
+  font-family: "RobotoSlab-Regular";
+  padding-bottom: 35px; }
+  .portfolio-block .button-fr {
+    margin-bottom: 65px;
+    position: relative; }
+    .portfolio-block .button-fr button {
+      display: inline-block;
+      border: solid 2px #fd0000;
+      padding: 15px 25px;
+      background-color: #FFF;
+      margin: 0 15px;
+      border-radius: 25px;
+      font-size: 15px;
+      font-family: "Brandon-Bold";
+      text-transform: uppercase; }
+      .portfolio-block .button-fr button.mixitup-control-active {
+        background-color: #fd0000;
+        color: #fff; }
+      .portfolio-block .button-fr button:focus {
+        outline: none; }
+    .portfolio-block .button-fr .behance-link {
+      position: absolute;
+      right: 0;
+      top: 15px; }
+  .portfolio-block .items-fr .item {
+    margin-bottom: 25px; }
+    .portfolio-block .items-fr .item a {
+      display: block;
+      position: relative;
+      border-radius: 25px;
+      overflow: hidden;
+      color: #fff; }
+      .portfolio-block .items-fr .item a .caption-fr {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(17, 18, 17, 0.2); }
+        .portfolio-block .items-fr .item a .caption-fr .text {
+          margin-top: 10px; }
+        .portfolio-block .items-fr .item a .caption-fr .type {
+          color: #fd2626; }
+
 .contact-block {
   text-align: center;
   background-color: #eaf0f3;
