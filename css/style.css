@@ -21,6 +21,17 @@ body {
 body {
   position: relative; }
 
+.intro-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: "Brandon-Bold";
+  margin-top: 80px;
+  margin-bottom: 35px; }
+  .intro-title img {
+    margin-bottom: 30px; }
+  .intro-title .title-red {
+    color: #fd0000; }
+
 .affix {
   top: 0;
   width: 100%;
@@ -97,16 +108,6 @@ body {
   text-align: center;
   font-family: "RobotoSlab-Regular";
   font-size: 16px; }
-  .about-block .intro-title {
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: "Brandon-Bold";
-    margin-top: 80px;
-    margin-bottom: 35px; }
-    .about-block .intro-title img {
-      margin-bottom: 30px; }
-    .about-block .intro-title .title-red {
-      color: #fd0000; }
   .about-block .personal-intro {
     margin: 35px 0 45px; }
   .about-block .ability .ability-title {
@@ -177,5 +178,39 @@ body {
       .skill-block .skill-frame .skill-progress .skill-percent {
         background-color: #fd0000;
         height: 4px; }
+
+.education-block {
+  text-align: center;
+  font-family: "RobotoSlab-Regular";
+  font-size: 16px;
+  padding-bottom: 60px; }
+  .education-block .intro-text {
+    margin-bottom: 70px; }
+  .education-block .text-fr {
+    text-align: left; }
+    .education-block .text-fr .title {
+      font-size: 20px;
+      font-family: "Brandon-Bold";
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      margin-top: 0; }
+    .education-block .text-fr .date {
+      color: #ea2216; }
+    .education-block .text-fr .university {
+      font-family: "RobotoSlab-Bold"; }
+
+.contact-block {
+  text-align: center;
+  background-color: #eaf0f3;
+  font-family: "RobotoSlab-Regular";
+  font-size: 16px; }
+  .contact-block .info-fr {
+    padding: 40px 0 50px; }
+    .contact-block .info-fr .info img {
+      margin-bottom: 15px; }
+  .contact-block footer {
+    padding: 60px 0;
+    background-color: #100f1c;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

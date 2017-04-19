@@ -39,6 +39,25 @@ body {
   position: relative; 
 }
 
+h3,
+p {
+  // margin: 0;
+}
+
+.intro-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: $brandonBold;
+  margin-top: 80px;
+  margin-bottom: 35px;
+  img {
+    margin-bottom: 30px;
+  }
+  .title-red {
+    color: #fd0000;
+  }
+}
+
 .affix {
   top:0;
   width: 100%;
@@ -137,19 +156,6 @@ body {
   text-align: center;
   font-family: $robotoRegular;
   font-size: 16px;
-  .intro-title {
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: $brandonBold;
-    margin-top: 80px;
-    margin-bottom: 35px;
-    img {
-      margin-bottom: 30px;
-    }
-    .title-red {
-      color: #fd0000;
-    }
-  }
 
   .personal-intro {
     margin: 35px 0 45px;
@@ -249,5 +255,53 @@ body {
         height: 4px;
       }
     }
+  }
+}
+
+.education-block {
+  text-align: center;
+  font-family: $robotoRegular;
+  font-size: 16px;
+  padding-bottom: 60px;
+  .intro-text {
+    margin-bottom: 70px;
+  }
+
+  .text-fr {
+    text-align: left;
+    .title {
+      font-size: 20px;
+      font-family: $brandonBold;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+    .date {
+      color: #ea2216;
+    }
+    .university {
+      font-family: $robotoBold;
+
+    }
+  }
+}
+
+.contact-block {
+  text-align: center;
+  background-color: #eaf0f3;
+  font-family: $robotoRegular;
+  font-size: 16px;
+  .info-fr {
+    padding: 40px 0 50px;
+    .info {
+      img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  footer {
+    padding: 60px 0;
+    background-color: #100f1c;
+    color: #fff;
   }
 }
