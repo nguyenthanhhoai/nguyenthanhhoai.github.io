@@ -33,4 +33,6 @@ $(document).ready(function() {
       "effects": "fade scale(0.53)"
     }
   });
+
+  new WOW().init();
 });
