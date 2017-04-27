@@ -29,6 +29,20 @@ $brandonMedium: 'Brandon-Medium';
   src: url('../fonts/Brandon_med.otf');
 }
 
+@keyframes widthAnimation {
+  from {
+    max-width: 0;
+  }
+
+  to {
+    max-width: 100%;
+  }
+}
+
+.widthAnimation {
+  animation-name: widthAnimation;
+}
+
 html,
 body {
   width: 100%;
