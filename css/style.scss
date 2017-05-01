@@ -90,7 +90,6 @@ p {
   .navbar-brand {
     padding: 25px 120px 25px 0;
   }
-
   li {
     a {
       color: #fff;
@@ -112,6 +111,11 @@ p {
         border-top-color: #e00015;
         background: none;
       }
+    }
+  }
+  .navbar-toggle {
+    span {
+      background-color: #fff;
     }
   }
 }
