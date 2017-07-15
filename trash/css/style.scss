@@ -1,0 +1,143 @@
+$robotoRegular: 'RobotoSlab-Regular';
+$robotoLight: 'RobotoSlab-Light';
+$robotoBold: 'RobotoSlab-Bold';
+$brandonBold: 'Brandon-Bold';
+$brandonMedium: 'Brandon-Medium';
+
+@font-face {
+  font-family: $robotoBold;
+  src: url('../fonts/RobotoSlab-Bold.ttf');
+}
+
+@font-face {
+  font-family: $robotoRegular;
+  src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: $robotoLight;
+  src: url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+  font-family: $brandonBold;
+  src: url('../fonts/Brandon_bld.otf');
+}
+
+@font-face {
+  font-family: $brandonMedium;
+  src: url('../fonts/Brandon_med.otf');
+}
+
+@keyframes widthAnimation {
+  from {
+    max-width: 0;
+  }
+
+  to {
+    max-width: 100%;
+  }
+}
+
+.widthAnimation {
+  animation-name: widthAnimation;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-smooth: always;
+}
+
+body {
+  position: relative; 
+}
+
+h3,
+p {
+  // margin: 0;
+}
+
+.intro-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: $brandonBold;
+  margin-top: 80px;
+  margin-bottom: 35px;
+  img {
+    margin-bottom: 30px;
+  }
+  .title-red {
+    color: #fd0000;
+  }
+}
+
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.navigation {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #08070e;
+  // background-color: #fff;
+  border: none;
+  border-radius: 0;
+  min-height: 80px;
+  font-family: $robotoRegular;
+  .navbar-brand {
+    padding: 25px 120px 25px 0;
+  }
+  li {
+    a {
+      color: #fff;
+      font-size: 18px;
+      border-top: solid 5px transparent;
+      padding: 25px 20px;
+      &:hover {
+        color: #e00015;
+        border-top-color: #e00015;
+        background: none;
+      }
+      &:focus {
+        background: none;
+      }
+    }
+    &.active {
+      a {
+        color: #e00015;
+        border-top-color: #e00015;
+        background: none;
+      }
+    }
+  }
+  .navbar-toggle {
+    span {
+      background-color: #fff;
+    }
+  }
+}
+
+@import '_intro_block';
+@import '_about_block';
+@import '_skill_block';
+@import '_education_block';
+@import '_experience_block';
+@import '_portfolio_block';
+@import '_contact_block';
+
+@media all and (max-width: 768px) {
+  .intro-title {
+  margin-top: 60px;
+  }
+}
+
+@media all and (max-width: 480px)  {
+  .intro-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

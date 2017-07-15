@@ -1,0 +1,70 @@
+.experience-block {
+  text-align: center;
+  background-color: #eaf0f3;
+  font-family: $robotoRegular;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 60px;
+  .intro-text {
+    margin-bottom: 0;
+  }
+
+  hr {
+    border-top-color: #ea2216;
+    margin: 50px 0;
+  }
+
+
+  .text-fr {
+    text-align: left;
+    .title {
+      margin-top: 0;
+      font-family: $brandonBold;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .date {
+      color: #fd0000;
+    }
+
+    .company-name {
+      font-family: $robotoBold;
+    }
+
+    .experience-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-bottom: 20px;
+        overflow: hidden;
+        img {
+          float: left;
+        }
+        span {
+          margin-left: 50px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+  .experience-block {
+    .image-fr {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .experience-block {
+    .image-fr {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}

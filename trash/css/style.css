@@ -24,7 +24,8 @@
 html,
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-smooth: always; }
 
 body {
   position: relative; }
@@ -77,7 +78,8 @@ body {
   height: 100%;
   background: url("../images/homebg.jpg") center center no-repeat;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  background-attachment: fixed; }
   .intro-block .title-1 {
     font-family: "Brandon-Bold";
     font-size: 60px;
@@ -94,12 +96,14 @@ body {
     font-family: "RobotoSlab-Light";
     font-size: 20px;
     margin-bottom: 60px;
-    line-height: 30px; }
+    line-height: 30px;
+    padding: 0 60px;
+    line-height: 35px; }
   .intro-block .behance-btn {
     background-color: #fd0000;
     color: #fff;
     display: inline-block;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border-radius: 30px;
     text-transform: uppercase;
     font-family: "Brandon-Medium";
@@ -114,10 +118,43 @@ body {
     margin-top: 160px;
     display: inline-block; }
 
+@media all and (max-height: 900px) {
+  .intro-block .scroll-down-btn {
+    margin-top: 80px; } }
+@media all and (max-width: 1200px) {
+  .intro-block .title-3 {
+    padding: 0; } }
+@media all and (max-width: 1024px) {
+  .intro-block .title-1 {
+    font-size: 55px; }
+  .intro-block .title-2 {
+    font-size: 30px; } }
+@media all and (max-width: 768px) {
+  .intro-block .title-3 {
+    font-size: 18px; }
+  .intro-block .scroll-down-btn {
+    display: none; } }
+@media all and (max-width: 480px) {
+  .intro-block .title-1 {
+    font-size: 38px;
+    margin-bottom: 0;
+    margin-top: 90px; }
+  .intro-block .title-2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0; }
+  .intro-block .title-3 {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px; }
+  .intro-block .behance-btn {
+    padding: 13px 25px;
+    font-size: 14px; } }
 .about-block {
   text-align: center;
   font-family: "RobotoSlab-Regular";
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 24px; }
   .about-block .personal-intro {
     margin: 35px 0 45px; }
   .about-block .ability .ability-title {
@@ -132,17 +169,27 @@ body {
     background-color: #fd0000;
     color: #fff;
     display: inline-block;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border-radius: 30px;
     text-transform: uppercase;
     font-family: "Brandon-Medium";
     font-size: 16px;
-    margin-bottom: 75px; }
+    margin-bottom: 75px;
+    border: none; }
     .about-block .file-download-btn img {
       margin-left: 10px;
       position: relative;
       bottom: 5px; }
 
+@media all and (max-width: 1024px) {
+  .about-block .ability {
+    margin-top: 50px; }
+  .about-block .file-download-btn {
+    padding: 13px 25px;
+    font-size: 14px; } }
+@media all and (max-width: 768px) {
+  .about-block .file-download-btn {
+    margin-bottom: 60px; } }
 .skill-block {
   text-align: center;
   background-color: #100f1c;
@@ -161,7 +208,8 @@ body {
       color: #fd0000; }
   .skill-block .skill-intro {
     font-size: 16px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    line-height: 24px; }
   .skill-block .article img {
     margin-bottom: 15px; }
   .skill-block .article p {
@@ -183,16 +231,24 @@ body {
     .skill-block .skill-frame .skill-title {
       font-size: 18px; }
     .skill-block .skill-frame .skill-progress {
-      background-color: #747474;
+      background-color: #fff;
       margin-bottom: 35px; }
       .skill-block .skill-frame .skill-progress .skill-percent {
         background-color: #fd0000;
         height: 4px; }
 
+@media all and (max-width: 768px) {
+  .article {
+    margin-top: 50px; } }
+@media all and (max-width: 480px) {
+  .skill-block .intro-title {
+    font-size: 28px;
+    line-height: 40px; } }
 .education-block {
   text-align: center;
   font-family: "RobotoSlab-Regular";
   font-size: 16px;
+  line-height: 24px;
   padding-bottom: 60px; }
   .education-block .intro-text {
     margin-bottom: 70px; }
@@ -209,11 +265,21 @@ body {
     .education-block .text-fr .university {
       font-family: "RobotoSlab-Bold"; }
 
+@media all and (max-width: 992px) {
+  .education-block .info-fr .info:last-child {
+    margin-top: 30px; } }
+@media all and (max-width: 768px) {
+  .education-block .image-fr {
+    margin-bottom: 30px;
+    text-align: center;
+    display: inline-block; } }
 .experience-block {
   text-align: center;
   background-color: #eaf0f3;
   font-family: "RobotoSlab-Regular";
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 60px; }
   .experience-block .intro-text {
     margin-bottom: 0; }
   .experience-block hr {
@@ -229,16 +295,28 @@ body {
     .experience-block .text-fr .date {
       color: #fd0000; }
     .experience-block .text-fr .company-name {
-      font-weight: bold; }
+      font-family: "RobotoSlab-Bold"; }
     .experience-block .text-fr .experience-list {
       list-style: none;
       margin: 0;
       padding: 0; }
       .experience-block .text-fr .experience-list li {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        overflow: hidden; }
         .experience-block .text-fr .experience-list li img {
-          margin-right: 15px; }
+          float: left; }
+        .experience-block .text-fr .experience-list li span {
+          margin-left: 50px;
+          display: block; }
 
+@media all and (max-width: 992px) {
+  .experience-block .image-fr {
+    text-align: left;
+    margin-bottom: 30px; } }
+@media all and (max-width: 768px) {
+  .experience-block .image-fr {
+    text-align: center;
+    margin-bottom: 30px; } }
 .portfolio-block {
   text-align: center;
   font-family: "RobotoSlab-Regular";
@@ -249,7 +327,7 @@ body {
     .portfolio-block .button-fr button {
       display: inline-block;
       border: solid 2px #fd0000;
-      padding: 15px 25px;
+      padding: 13px 25px;
       background-color: #FFF;
       margin: 0 15px;
       border-radius: 25px;
@@ -284,6 +362,19 @@ body {
         .portfolio-block .items-fr .item a .caption-fr .type {
           color: #fd2626; }
 
+@media all and (max-width: 768px) {
+  .portfolio-block .button-fr button {
+    margin: 5px 10px; }
+  .portfolio-block .items-fr .item a .caption-fr .text {
+    font-size: 13px; }
+  .portfolio-block .items-fr .item a .caption-fr .type {
+    font-size: 13px; } }
+@media all and (max-width: 480px) {
+  .portfolio-block .behance-link {
+    display: none; }
+
+  .items-fr .item a .caption-fr {
+    display: none; } }
 .contact-block {
   text-align: center;
   background-color: #eaf0f3;
@@ -297,5 +388,18 @@ body {
     padding: 60px 0;
     background-color: #100f1c;
     color: #fff; }
+
+@media all and (max-width: 768px) {
+  .contact-block .info-fr .info:last-child {
+    margin-top: 30px; }
+  .contact-block footer {
+    padding: 30px 0; } }
+@media all and (max-width: 768px) {
+  .intro-title {
+    margin-top: 60px; } }
+@media all and (max-width: 480px) {
+  .intro-title {
+    font-size: 28px;
+    line-height: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

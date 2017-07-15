@@ -1,0 +1,81 @@
+.skill-block {
+  text-align: center;
+  background-color: #100f1c;
+  color: #fff;
+  padding: 70px 0 40px;
+  font-family: $robotoRegular;
+  .intro-title {
+    margin-top: 0;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: $brandonBold;
+    font-size: 35px;
+    img {
+      margin-bottom: 30px;
+    }
+    .title-red {
+      color: #fd0000;
+    }
+  }
+
+  .skill-intro {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 24px;
+  }
+
+  .article {
+    img {
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: $brandonMedium;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+
+  hr {
+    border-top-color: #282733;
+    margin: 40px 0;
+  }
+
+  .software-title {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: $brandonBold;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .skill-frame {
+    text-align: left;
+    .skill-title {
+      font-size: 18px;
+    }
+    .skill-progress {
+      background-color: #fff;
+      margin-bottom: 35px;
+      .skill-percent {
+        background-color: #fd0000;
+        height: 4px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .article {
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 480px)  {
+  .skill-block {
+    .intro-title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }  
+}

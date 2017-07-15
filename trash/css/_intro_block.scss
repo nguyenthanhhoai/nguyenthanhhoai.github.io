@@ -1,0 +1,114 @@
+.intro-block {
+  height: 100%;
+  background: url('../images/homebg.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+  .title-1 {
+    font-family: $brandonBold;
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 170px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .title-2 {
+    font-family: $brandonMedium;
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  .title-3 {
+    font-family: $robotoLight;
+    font-size: 20px;
+    margin-bottom: 60px;
+    line-height: 30px;
+    padding: 0 60px;
+    line-height: 35px;
+  }
+  .behance-btn {
+    background-color: #fd0000;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: $brandonMedium;
+    font-size: 16px;
+    span {
+      position: relative;
+      top: 3px;
+      margin-left: 5px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .scroll-down-btn {
+    margin-top: 160px;
+    display: inline-block;
+  }
+}
+
+@media all and (max-height: 900px) {
+  .intro-block {
+    .scroll-down-btn {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .intro-block {
+    .title-3 {
+      padding: 0;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .intro-block {
+    .title-1 {
+      font-size: 55px;
+    }
+    .title-2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+.intro-block {
+    .title-3 {
+      font-size: 18px;
+    }
+    .scroll-down-btn {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+.intro-block {
+    .title-1 {
+      font-size: 38px;
+      margin-bottom: 0;
+      margin-top: 90px;
+    }
+    .title-2 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 0;
+    }
+    .title-3 {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    .behance-btn {
+      padding: 13px 25px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.about-block {
+  text-align: center;
+  font-family: $robotoRegular;
+  font-size: 16px;
+  line-height: 24px;
+
+  .personal-intro {
+    margin: 35px 0 45px;
+  }
+
+  .ability {
+    .ability-title {
+      font-family: $brandonBold;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 0
+    }
+  }
+
+  .file-download-btn {
+    margin-top: 55px;
+    background-color: #fd0000;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: $brandonMedium;
+    font-size: 16px;
+    margin-bottom: 75px;
+    border: none;
+    img {
+      margin-left: 10px;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .about-block {
+    .ability {
+      margin-top: 50px; 
+    }
+    .file-download-btn {
+      padding: 13px 25px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about-block {
+    .file-download-btn {
+      margin-bottom: 60px;
+    }
+  }
+}
