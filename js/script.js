@@ -7,13 +7,13 @@ $(document).ready(function() {
     offsetTop = 80;
   }
 
-  $(window).scroll(function() {
+  /*$(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
       $('.navbar').addClass('bg-white');
     } else {
       $('.navbar').removeClass('bg-white');
     }
-  });
+  });*/
 
   $('body').scrollspy({target: ".navbar", offset: offsetTop});
   
